@@ -1,12 +1,15 @@
 #include "MyForm.h"
+
 using namespace System;
 using namespace System::Windows::Forms;
 
-[STAThreadAttribute]
-void Main(array<String^>^ args) {
+
+[STAThread]
+void Main(array<String^>^ args)
+{
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
-	ysa1::MyForm form;
+
+	Continuous1::MyForm form;
 	Application::Run(%form);
 }
-
